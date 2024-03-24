@@ -31,10 +31,10 @@ myProfile.placesLived.push({place:'Canada', length:'7 years'});
 document.querySelector('#photo').setAttribute('src',myProfile['photo']);
 
 /* Name */
-document.getElementById('photo').setAttribute('alt',myProfile.name);
+document.querySelector('#name').textContent = myProfile.name
 
 /* Photo with attributes */
-
+document.getElementById('photo').setAttribute('alt',myProfile.name);
 
 /* Favorite Foods List*/
 myProfile.favoriteFoods.forEach((element) =>{
